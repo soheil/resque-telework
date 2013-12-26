@@ -58,7 +58,7 @@ module Resque
           end
           
           app.get "/#{appn.downcase}/Overview" do
-            @refresh= 65
+            @refresh= 66
             if params[:refresh]
               @refresh= params[:refresh].to_i
               @refresh= nil if @refresh==0
